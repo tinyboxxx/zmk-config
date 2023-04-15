@@ -12,8 +12,5 @@
 #     shield: reviung41
 #
 ---
-include:
-  - board: nrfmicro_13
-    shield: tiboard_left
-  - board: nrfmicro_13
-    shield: tiboard_right
+board: [ "nrfmicro_13" ]
+shield: [ "tiboard_left", "tiboard_left" ]
