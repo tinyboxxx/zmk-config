@@ -13,4 +13,4 @@
 #
 ---
 board: [ "nrfmicro_13" ]
-shield: [ "tiboard_left", "tiboard_left" ]
+shield: [ "tiboard_left", "tiboard_right" ]
