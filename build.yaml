@@ -12,5 +12,8 @@
 #     shield: reviung41
 #
 ---
-board: [ "nrfmicro_13" ]
-shield: [ "sofle_left", "sofle_right" ]
+include:
+  - board: nrfmicro_13
+    shield: sofle_left
+  - board: nrfmicro_13
+    shield: sofle_right
