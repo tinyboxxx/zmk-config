@@ -46,3 +46,9 @@
 		zmk,underglow = &led_strip;
 	};
 };
+
+&arduino_i2c {
+	status = "okay";
+	clock-frequency = <I2C_BITRATE_FAST>;
+	zephyr,concat-buf-size = <1025>;
+};
