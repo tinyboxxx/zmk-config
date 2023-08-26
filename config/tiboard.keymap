@@ -81,10 +81,10 @@
             //              |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_HUI   &kp DEL
-      &trans       &kp INS     &kp PSCRN   &kp K_CMENU        &trans        &trans                        &kp PG_UP           &trans           &kp UP           &trans  &rgb_ug RGB_HUD    &trans
-&kp CAPSLOCK      &kp LALT     &kp LCTRL     &kp LSHFT        &trans      &kp CLCK                        &kp PG_DN         &kp LEFT         &kp DOWN        &kp RIGHT          &kp DEL  &kp BSPC
-      &trans    &kp K_UNDO     &kp K_CUT    &kp K_COPY   &kp K_PASTE        &trans  &trans  &trans           &trans           &trans           &trans           &trans           &trans    &trans
+  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &rgb_ug RGB_TOG  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &rgb_ug RGB_HUI  &kp DEL
+      &trans       &kp INS     &kp PSCRN   &kp K_CMENU        &trans        &trans                        &kp PG_UP  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &rgb_ug RGB_HUD   &trans
+&kp CAPSLOCK      &kp LALT     &kp LCTRL     &kp LSHFT        &trans      &kp CLCK                        &kp PG_DN  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3           &trans   &trans
+      &trans    &kp K_UNDO     &kp K_CUT    &kp K_COPY   &kp K_PASTE        &trans  &trans  &trans           &trans           &trans           &trans  &kp KP_NUMBER_0           &trans   &trans
                                   &trans        &trans        &trans        &trans  &trans  &trans           &trans           &trans           &trans           &trans
             >;
 
