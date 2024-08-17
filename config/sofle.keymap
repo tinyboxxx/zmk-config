@@ -10,6 +10,9 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/ext_power.h>
 
+//For RGB support https://github.com/zmkfirmware/zmk/issues/885
+#include <../boards/shields/kyria/boards/nice_nano.overlay>
+
 #define BASE 0
 #define LOWER 1
 #define RAISE 2
@@ -24,6 +27,13 @@
 &right_encoder {
     resolution = <4>;
 };
+
+&argb_led {
+    label = "ARGB LED";
+    gpios = <&gpio0 22 GPIO_ACTIVE_HIGH>;  // Changed to P0.22
+    chain-length = <30>;  // Number of LEDs in the chain
+};
+
 
 / {
 
