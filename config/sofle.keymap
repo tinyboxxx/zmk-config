@@ -28,13 +28,6 @@
     resolution = <4>;
 };
 
-&argb_led {
-    label = "ARGB LED";
-    gpios = <&gpio0 22 GPIO_ACTIVE_HIGH>;  // Changed to P0.22
-    chain-length = <30>;  // Number of LEDs in the chain
-};
-
-
 / {
 
    // Activate ADJUST layer by pressing raise and lower
