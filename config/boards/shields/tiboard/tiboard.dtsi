@@ -10,8 +10,7 @@
     chosen {
         zephyr,display = &oled;
         zmk,kscan = &kscan0;
-        zmk,matrix_transform = &default_transform;
-        zmk,underglow = &underglow_pwm;
+        zmk,matrix-transform = &default_transform;
     };
 
     default_transform: keymap_transform_0 {
@@ -76,7 +75,6 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
     oled: ssd1306@3c {
         compatible = "solomon,ssd1306fb";
         reg = <0x3c>;
-        label = "DISPLAY";
         width = <128>;
         height = <32>;
         segment-offset = <0>;
@@ -86,34 +84,7 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
         segment-remap;
         com-invdir;
         com-sequential;
+        inversion-on;
         prechargep = <0x22>;
-    };
-};
-
-
-// The PS/2 GPIO and mouse drivers.
-/ {
-    gpio_ps2: gpio_ps2 {
-		status = "disabled";
-        compatible = "gpio-ps2";
-
-        // 
-        scl-gpios = <&pro_micro 4 0>;
-        sda-gpios = <&pro_micro 0 0>;
-    };
-};
-
-/ {
-    mouse_ps2: mouse_ps2 {
-		status = "disabled";
-        compatible = "zmk,mouse-ps2";
-        ps2-device = <&gpio_ps2>;
-
-        // Uncomment this if you have an extra free pin and
-        // want the controller to perform the Power-On-Reset
-        // instead of using a reset circuit.
-        //
-        // The bottom right pin of the nice!nano (when it is facing down)
-        // rst-gpios = <&pro_micro 9 0>;
     };
 };

@@ -9,6 +9,7 @@ features:
   - keys
   - display
   - encoder
+  - underglow
 siblings:
   - tiboard_left
   - tiboard_right
