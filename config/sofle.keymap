@@ -29,6 +29,7 @@
 };
 
 &led_strip {
+    mosi-pin = <22>;
     chain-length = <30>;
 };
 
